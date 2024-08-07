@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@capacitor/camera':
+        specifier: ^6.0.1
+        version: 6.0.1(@capacitor/core@6.1.2)
     devDependencies:
       ts-node:
         specifier: ^10.9.2
@@ -16,6 +20,14 @@ importers:
         version: 5.5.4
 
 packages:
+
+  '@capacitor/camera@6.0.1':
+    resolution: {integrity: sha512-KGfjv8q0Q9OEcpBGqSSZD2yb1KeDe12mlzOOPp4wr6GvcOY0EIvZ0o3KiPXegLVuRZeemz71/lCxPHAQ/5gAiA==}
+    peerDependencies:
+      '@capacitor/core': ^6.0.0
+
+  '@capacitor/core@6.1.2':
+    resolution: {integrity: sha512-xFy1/4qLFLp5WCIzIhtwUuVNNoz36+V7/BzHmLqgVJcvotc4MMjswW/TshnPQaLLujEOaLkA4h8ZJ0uoK3ImGg==}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -82,6 +94,9 @@ packages:
       '@swc/wasm':
         optional: true
 
+  tslib@2.6.3:
+    resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
+
   typescript@5.5.4:
     resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
     engines: {node: '>=14.17'}
@@ -98,6 +113,14 @@ packages:
     engines: {node: '>=6'}
 
 snapshots:
+
+  '@capacitor/camera@6.0.1(@capacitor/core@6.1.2)':
+    dependencies:
+      '@capacitor/core': 6.1.2
+
+  '@capacitor/core@6.1.2':
+    dependencies:
+      tslib: 2.6.3
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -155,6 +178,8 @@ snapshots:
       typescript: 5.5.4
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
+
+  tslib@2.6.3: {}
 
   typescript@5.5.4: {}
 
